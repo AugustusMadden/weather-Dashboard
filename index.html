@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+
+    <header class="jumbotron jumbotron-fluid custom-jumbotron">
+        <div class="container text-center">
+            <h1>Weather</h1>
+        </div>
+
+    </header>
+
+    <main class="d-flex flex-column justify-space-between">
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <h2>Search for a City:</h2>
+                <form id="city-form">
+                    <input type="text" class="form-input w-auto" id="city-input" name="city-input"
+                        placeholder="Enter city name" />
+                    <button class="btn btn-info">Search</button>
+                </form>
+
+                <ul id="city-list"></ul>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <div class="card">
+                <h3 id="city-search-term"></h3>
+                <p id="currentTemp"> </p>
+                <p id="currentWind"> </p>
+                <p id="currentHumidity"></p>
+                <p id="currentUvIndex"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card text-white bg-dark mb-3 col " style="max-width: 250px">
+                <div class="card-header" id="day1"></div>
+                <div class="card-body">
+                    <p class="card-text dayTemp"></p>
+                    <p class="wind"></p>
+                    <p class="humidity"></p>
+                </div>
+            </div>
+
+            <div class="card text-white bg-dark mb-3 col " style="max-width: 250px">
+                <div class="card-header" id="day2"></div>
+                <div class="card-body">
+                    <p class="card-text dayTemp"></p>
+                    <p class="wind"></p>
+                    <p class="humidity"></p>
+                </div>
+            </div>
+
+            <div class="card text-white bg-dark mb-3 col " style="max-width: 250px">
+                <div class="card-header" id="day3"></div>
+                <div class="card-body">
+                    <p class="card-text dayTemp"></p>
+                    <p class="wind"></p>
+                    <p class="humidity"></p>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3 col " style="max-width: 250px">
+                    <div class="card-header" id="day4"></div>
+                    <div class="card-body">
+                        <p class="card-text dayTemp"></p>
+                        <p class="wind"></p>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
+
+            <div class="card text-white bg-dark mb-3 col " style="max-width: 250px">
+                    <div class="card-header" id="day5"></div>
+                    <div class="card-body">
+                        <p class="card-text dayTemp"></p>
+                        <p class="wind"></p>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
+        
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>

@@ -1,0 +1,32 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+  }
+
+.uv-low {
+    background-color: rgb(78, 175, 78);
+}
+
+.uv-moderate {
+    background-color: rgb(214, 213, 127);
+}
+
+.uv-high {
+    background-color: rgb(243, 196, 66);
+}
+
+.uv-veryHigh {
+    background-color: rgb(224, 88, 88);
+}
